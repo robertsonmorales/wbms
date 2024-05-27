@@ -10,8 +10,8 @@
 </style>
 <div class="row">
   <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-    <div class="info-box">
-      <span class="info-box-icon bg-gradient-secondary elevation-1"><i class="fas fa-th-list"></i></span>
+    <div class="info-box shadow-sm border rounded">
+      <span class="info-box-icon bg-gradient-secondary"><i class="fas fa-th-list"></i></span>
       <div class="info-box-content">
         <span class="info-box-text">Categories</span>
         <span class="info-box-number">
@@ -28,8 +28,8 @@
   </div>
   <!-- /.col -->
   <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-    <div class="info-box">
-      <span class="info-box-icon bg-gradient-success elevation-1"><i class="fas fa-users"></i></span>
+    <div class="info-box shadow-sm border rounded">
+      <span class="info-box-icon bg-gradient-success"><i class="fas fa-users"></i></span>
       <div class="info-box-content">
         <span class="info-box-text">Total Clients</span>
         <span class="info-box-number">
@@ -46,8 +46,8 @@
   </div>
   <!-- /.col -->
   <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-    <div class="info-box">
-      <span class="info-box-icon bg-gradient-danger elevation-1"><i class="fas fa-file-invoice"></i></span>
+    <div class="info-box shadow-sm border rounded">
+      <span class="info-box-icon bg-gradient-danger"><i class="fas fa-file-invoice"></i></span>
       <div class="info-box-content">
         <span class="info-box-text">Pending Bills</span>
         <span class="info-box-number">
@@ -63,7 +63,7 @@
     <!-- /.info-box -->
   </div>
   <!-- /.col -->
-  <div class="mx-2 w-100">
+  <div class="mx-2 w-100 mt-2">
     <?php
     $currentYear = date('Y');
 
@@ -86,8 +86,8 @@
     }
 
     if ($result->num_rows > 0) {
-      echo "<h3>Monthly Billing Totals for $currentYear</h3>";
-      echo "<table class='table table-bordered'>";  // Add table structure (optional)
+      echo "<h4>Monthly Billing Totals for $currentYear</h4>";
+      echo "<table class='table table-bordered shadow-sm bg-white'>";  // Add table structure (optional)
       echo "<thead>";  // Add table header (optional)
       echo "<tr>";
       echo "<th>Month</th>";
